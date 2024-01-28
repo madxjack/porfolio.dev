@@ -1,0 +1,51 @@
+<form
+    class="flex flex-col gap-4"
+    action="https://formspree.io/f/xleqgava"
+    method="POST"
+>
+    <!-- Name field -->
+    <label for="name" class="font-bold">Nombre:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        class="form-input bg-white border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm"
+    />
+
+    <!-- Email field -->
+    <label for="email" class="font-bold">Correo Electrónico:</label>
+    <input
+        type="email"
+        id="email"
+        name="_replyto"
+        required
+        class="form-input bg-white border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm"
+    />
+
+    <!-- Subject field -->
+    <label for="subject" class="font-bold">Asunto:</label>
+    <input
+        type="text"
+        id="subject"
+        name="subject"
+        required
+        class="form-input bg-white border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm"
+    />
+
+    <!-- Message field -->
+    <label for="message" class="font-bold">Mensaje:</label>
+    <textarea
+        id="message"
+        name="message"
+        required
+        class="form-textarea bg-white border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm"
+        rows="4"></textarea>
+
+    <!-- Submit button -->
+    <button
+        type="submit"
+        class="submit-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >Enviar</button
+    >
+</form>
