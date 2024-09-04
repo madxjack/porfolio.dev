@@ -5,7 +5,6 @@ import AboutMe from "@/components/AboutMe.astro";
 import Badge from "@/components/Badge.astro";
 import Briefcase from "@/components/icons/Briefcase.astro";
 import CodeIcon from "@/components/icons/Code.astro";
-import Experience from "@/components/Experience.astro";
 import GitHubIcon from "@/components/icons/GitHub.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import ProfileCheck from "@/components/icons/ProfileCheck.astro";
@@ -16,80 +15,80 @@ import Contact from "@/components/Contact.astro";
 ---
 
 <Layout
-    title="Porfolio de Pedro - Desarrollador y Programador Web"
-    description="Contrata a Pedro para crear tu aplicación web o móvil."
+  title="Porfolio de Pedro - Desarrollador y Programador Web"
+  description="Contrata a Pedro para crear tu aplicación web o móvil."
 >
-    <main class="px-4">
-        <SectionContainer class="py-44 pb-32">
-            <h1
-                class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
-            >
-                Hey, soy Pedro <a
-                    href="https://github.com/madxjack"
-                    target="_blank"
-                    rel="noopener"
-                    class="flex justify-center items-center hover:scale-105 transition"
-                >
-                    <Badge>Disponible para trabajar</Badge>
-                </a>
-            </h1>
-            <h2
-                class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
-            >
-                <span>2 años de experiencia en proyectos personales.</span><span
-                    class="text-yellow-800 dark:text-yellow-200"
-                >
-                    Desarrollador Web</span
-                >
-                .<span class="text-red-800 dark:text-red-200">
-                    De Valencia, España</span
-                >.
-                <span class="text-sky-800 dark:text-sky-200"
-                    >Curioso por como funcionan las tecnologías.</span
-                >
-            </h2>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
+      <h1
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, soy Pedro <a
+          href="https://github.com/madxjack"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center hover:scale-105 transition"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+      >
+        <span>Más de 2 años de experiencia en diversos proyectos.</span><span
+          class="text-yellow-800 dark:text-yellow-200"
+        >
+          Desarrollador Web</span
+        >
+        .<span class="text-red-800 dark:text-red-200">
+          De Valencia, España</span
+        >.
+        <span class="text-sky-800 dark:text-sky-200"
+          >Curioso por como funcionan las tecnologías.</span
+        >
+      </h2>
 
-            <nav class="flex gap-4 mt-8 flex-wrap">
-                <SocialPill href="https://github.com/madxjack">
-                    <GitHubIcon class="size-4 md:size-6" />
-                    GitHub
-                </SocialPill>
-                <SocialPill href="mailto:pedrofb22@gmail.com">
-                    <MailIcon class="size-4 md:size-6" />
-                    pedrofb22@gmail.com
-                </SocialPill>
-            </nav>
-        </SectionContainer>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://github.com/madxjack">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:pedrofb22@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+          pedrofb22@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
 
-        <SectionContainer id="proyectos">
-            <h2
-                class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-            >
-                <CodeIcon class="size-7" />
-                Proyectos
-            </h2>
-            <Projects />
-        </SectionContainer>
+    <SectionContainer id="proyectos">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
 
-        <SectionContainer id="sobre-mi">
-            <h2
-                class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-            >
-                <ProfileCheck class="size-7" />
-                Sobre mi
-            </h2>
-            <AboutMe />
-        </SectionContainer>
+    <SectionContainer id="sobre-mi">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <ProfileCheck class="size-7" />
+        Sobre mi
+      </h2>
+      <AboutMe />
+    </SectionContainer>
 
-        <SectionContainer id="contacto">
-            <!-- contact form -->
-            <h2
-                class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-            >
-                <MailIcon class="size-7" />
-                Contacto
-            </h2>
-            <Contact />
-        </SectionContainer>
-    </main>
+    <SectionContainer id="contacto">
+      <!-- contact form -->
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <MailIcon class="size-7" />
+        Contacto
+      </h2>
+      <Contact />
+    </SectionContainer>
+  </main>
 </Layout>
